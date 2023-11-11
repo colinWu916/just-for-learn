@@ -100,6 +100,7 @@ export default {
   mounted() {
     getData().then(({ data }) => {
       const { tableData } = data.data;
+      
       this.tableData = tableData;
 
       // 基于准备好的dom，初始化echarts实例
