@@ -26,7 +26,6 @@ const router = new VueRouter({
 // 添加全局前置导航守卫
 router.beforeEach((to, from, next) => {
   // 判断token存不存在
-  debugger
   const token = Cookies.get('token')
   // token不存在，说明当前用户是未登录，应该跳转至登录页
   if (!token && to.name !== 'login') {
