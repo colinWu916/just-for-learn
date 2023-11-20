@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是Mall
+    <img src="../../static/1.png" alt="">
   </div>
 </template>
 
