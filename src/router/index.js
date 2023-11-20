@@ -32,9 +32,6 @@ router.beforeEach((to, from, next) => {
     next({ name: 'login' })
   } else if (token && to.name === 'login') { // token存在，说明用户登录，此时跳转至首页
     next({ name: 'home' })
-
-
-    
   } else {
     next()
   }
